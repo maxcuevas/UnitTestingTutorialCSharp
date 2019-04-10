@@ -46,5 +46,12 @@ Note: Steps 22-23 are used to allow your UnitTestProject to see these not public
 3. Why decoupling code is good
 4. Not always having integration like tests
 5. List of books/resources I found useful
+
+- Clean Code by Robert C. Martin
+- Refactoring by Martin Fowler
+- Test Driven Development for Embedded C by James W. Grenning
+- Domain Driven Design by Eric J. Evans
+- Test Driven Development by Kent Beck
+
 6. Debug later/Test After/TDD
 7. Examples of Test After
