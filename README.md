@@ -25,10 +25,9 @@ This tutorial will use Visual Studio 2017 Community Edition
 19. Check the box to the left of the **ExampleDllProjectForUnitTesting**
 20. Click the **"OK"** button
 21. Go to any class under the **ExampleDllProjectForUnitTesting**
-22. Add the following text **"[assembly: InternalsVisibleTo("NameAssemblyYouWantToPermitAccess")]"** like so to your project.
-
+22. Add the following text **"[assembly: InternalsVisibleTo("<insert your unit test project's name here>")]"** like so to your project. Our example will have **"UnitTestProject"** for our unit test project.
 ```
-[assembly: InternalsVisibleTo("NameAssemblyYouWantToPermitAccess")]
+[assembly: InternalsVisibleTo("UnitTestProject")]
 namespace ExampleDllProjectForUnitTesting
 {...}
 ```
