@@ -149,7 +149,67 @@ The function following this attribute will run before any **TestMethod** in a **
 
 The function following this attribute will run after every **TestMethod** has run in a **TestClass** and before **TestCleanup**.
 
+```
+using System;
+using ExampleDLLProjectForUnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+namespace UnitTestProject
+{
+    [TestClass]
+    public class StringCreatorTest
+    {
+        private StringCreator subject;
+
+        [TestInitialize]
+        public void setUp() {
+            subject = new StringCreator();
+        }
+
+        [TestMethod]
+        public void getStringToReturn()
+        {
+
+            string expected = "I expect this string to return";
+            string actual = subject.getStringToReturn(expected);
+
+            Assert.AreEqual(expected, actual);
+        }
+    }
+}
+```
+
+Looking at **StringCreatorTest** we can see **3** of the attributes listed above.
+- TestClass
+- TestInitialize
+- TestMethod
+
+The **TestClass** is the **StringCreatorTest**.
+The **TestInitialize** function is named **setUp** 
+The **TestMethod** is **getStringToReturn**.
+
+The class to be tested is StringCreator and it was named **"subject"**. A common practice is to name the 
+class under test, or the subject under test, **subject**. This helps readibility when a unit test may 
+have multiple variable used. By having the subject under test named appropriately it is easier to focus on 
+what variable is to be tested, and avoid confusion.  
+
+In the **TestInialize** function a new instance of **StringCreator** is being applied to **subject**.
+This helps keep our subject under test from keeping state. We do not want to have a subject under test shared 
+among multiple tests. Every test, should always have a clean subject to make sure that the developer has full control of what state the subject under test should be in for a specific **TestMethod**.
+
+Finally the **TestMethod** has three lines of code. There are two variables **expected**, and **actual**.
+The names for those variable are common in most unit testing frameworks. The **expected** variable always has what you
+expect your subject under test to do when calling a specific function from it.
+The **actual** variable is the answer that *actually* came out of your subject under test.
+
+In the example, we *expect* the string *"I expect this string to return"* to be what is returned by our subject under test.
+The subject under test produces some output string that is stored in our **actual** variable.
+
+After the expected and actual variables have been set, it is time to verify the results.
+The Assert class has a function where two object can be compared. Pass in **expected**, and 
+**actual** as the parameters of the Assert.AreEqual call. Every test should have a way 
+to validate the success of the test. In our example, our subject under test returns something,
+we are then able to compare the returned *actual* value with an *expected* value.
 
 2. Using Interfaces on a class that depends on something else 
 3. Why decoupling code is good
