@@ -102,6 +102,53 @@ namespace UnitTestProject
 You have written your first test. Let's go over what just happened.
 
 There was a class created named StringCreator that did something very simple, returns a string.
+To test StringCreator a unit test named StringCreatorTest was made.
+
+In a unit test, only 1 class should be tested, and only the public functions of that class should be tested. 
+If you ever feel the need to start testing some of the private functions that a class has, it might be time 
+to break out those few private functions into their own class. Make only the functions that were 
+previously needed public, and then you can test those public functions.
+
+C# has a special feature called **"attributes"** that are used for the testing framework.
+Some of the key attributes that I use on a regular basis are:
+- [TestMethod]
+- [TestClass]
+- [TestIntialize]
+- [TestCleanup]
+- [ClassInitialize]
+- [ClassCleanup]
+
+
+### TestMethod
+
+The function that follows this attribute tells the testing framework it is a test to be run.
+
+### TestClass
+
+The class following this attribute tells the testing framework the class contains unit tests
+
+### TestInitialize
+
+The function following this attribute will run before each test in a test class. I most 
+commonly use it to set up a new instance of the class(*subject*) under test for each test to have a 
+clean environment. Another common use for this attribute is to reduce duplicity that may
+occur among multiple tests in a **TestClass**. 
+
+### TestCleanup
+
+The function following this attribute will run after each test in a test class. One example I 
+have had for using this was an executable that acted as a server to a client program I made.
+I would spin up a new, clean, version of the executable with **TestInitialize** and after each test, 
+**TestCleanup** would kill the executable. 
+
+### ClassInitialize
+
+The function following this attribute will run before any **TestMethod** in a **TestClass**, and before **TestInitialize**.
+
+### ClassCleanup
+
+The function following this attribute will run after every **TestMethod** has run in a **TestClass** and before **TestCleanup**.
+
 
 
 2. Using Interfaces on a class that depends on something else 
