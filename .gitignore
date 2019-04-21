@@ -2,4 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/SourceCode/.vs/ExampleDLLProjectForUnitTesting/v15
+/SourceCode/.vs/
+/SourceCode/ExampleDLLProjectForUnitTesting/bin/Debug
+/SourceCode/ExampleDLLProjectForUnitTesting/obj/Debug
+/SourceCode/UnitTestProject/bin/Debug
+/SourceCode/UnitTestProject/obj/Debug
