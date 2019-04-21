@@ -17,7 +17,7 @@ namespace ExampleDLLProjectForUnitTestDependingOnAnotherClass
             this.employeesAge = employeesAge;
         }
 
-        public double calculateSalary()
+        public int calculateSalary()
         {
             //Time intensive calculations
             Thread.Sleep(5000);

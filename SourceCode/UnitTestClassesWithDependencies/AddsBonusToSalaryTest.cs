@@ -10,14 +10,14 @@ namespace UnitTestClassesWithDependencies
         AddsBonusToSalary subject;
 
         [TestMethod]
-        public void calculateYearlySalary_GivenEmployeeAge8_ReturnDouble()
+        public void calculateYearlySalary_GivenEmployeeAge8_ReturnInt()
         {
             subject = new AddsBonusToSalary(new SalaryCalculator(8));
 
-            double expected = 88000;
+            int expected = (int)88e3;
             double actual = subject.calculateYearlySalary();
 
-            Assert.AreEqual(expected,actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

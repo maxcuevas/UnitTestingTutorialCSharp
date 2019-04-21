@@ -2,6 +2,6 @@
 {
     interface ISalaryCalculator
     {
-        double calculateSalary();
+        int calculateSalary();
     }
 }
