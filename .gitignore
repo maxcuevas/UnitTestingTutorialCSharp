@@ -7,3 +7,8 @@
 /SourceCode/ExampleDLLProjectForUnitTesting/obj/Debug
 /SourceCode/UnitTestProject/bin/Debug
 /SourceCode/UnitTestProject/obj/Debug
+/SourceCode/ExampleDLLProjectForUnitTestDependingOnAnotherClass/bin/Debug/netstandard2.0
+/SourceCode/ExampleDLLProjectForUnitTestDependingOnAnotherClass/obj/Debug/netstandard2.0
+/SourceCode/ExampleDLLProjectForUnitTestDependingOnAnotherClass/obj
+/SourceCode/UnitTestClassesWithDependencies/bin/Debug
+/SourceCode/UnitTestClassesWithDependencies/obj/Debug
