@@ -12,17 +12,36 @@ relief and throw the little main function away forever. Never to look back until
 time something breaks and you go throw this painful cycle all over again.
 
 ### Test After
-For developers new to unit testing I recommend this approach first. Really, what you should aim for is true TDD, but I think that this is a good way to get a feel for how unit testing works, why it is useful and should always be done. Unit Testing can be very complex and difficult when it's new, and that may turn some people away. 
+For developers new to unit testing I recommend this approach first. Really, what you should aim for is true TDD, but I think that
+this is a good way to get a feel for how unit testing works, why it is useful and should always be done. Unit Testing can be very 
+complex and difficult when it's new, and that may turn some people away. 
 
-This approach can either be done with legacy code or code you wrote yesterday that you just want to feel confident in. The point of adding the unit tests for a class is to make sure that the developer has full control, understanding, and confidence that a class is doing exactly what it was written to do. There shouldn't be any crazy things that happens because the class has fully been exhausted of its different path of execution. There should be a test for every single branch a function can go down. 
+This approach can either be done with legacy code or code you wrote yesterday that you just want to feel confident in. The point
+of adding the unit tests for a class is to make sure that the developer has full control, understanding, and confidence that a 
+class is doing exactly what it was written to do. There shouldn't be any crazy things that happens because the class has fully 
+been exhausted of its different path of execution. There should be a test for every single branch a function can go down. 
 
-For any bugs that appear in the future, there should be a test written to make sure that does not occur again. These unit tests that are created are living documentation and alarms that let the developer know something went wrong. Any weird, special case, that caused a bug which you never anticipated, that is a test waiting to be written. 
+For any bugs that appear in the future, there should be a test written to make sure that does not occur again. These unit tests 
+that are created are living documentation and alarms that let the developer know something went wrong. Any weird, special case, 
+that caused a bug which you never anticipated, that is a test waiting to be written. 
 
 ### Test Driven Development (TDD)
 
-TDD for me was a hard concept to buy in on. When someone mentioned testing your code automatically, I instantly agreed without question that it was brilliant and must be done. TDD I was skeptical for a long time on the way it is always taught and what it was trying to accomplish. It did not fully click until I read Grenning's book on TDD for Embedded C.
+TDD for me was a hard concept to buy in on. When someone mentioned testing your code automatically, I instantly agreed without 
+question that it was brilliant and must be done. TDD I was skeptical for a long time on the way it is always taught and what it 
+was trying to accomplish. It did not fully click until I read Grenning's book on TDD for Embedded C.
 
 In TDD, the test is written before any code has been written. 
 The test is expected to fail because no code has been written.
 Then the easiest, simplest answer to make the test pass is written.
 Finally the test is re-run, and hopefully your test passed.
+
+Some people, such as myself, would question what the point in this approach is. Why not just take the **Test After** approach, I
+don't want to waste time by making tests that fail before any code has been written. 
+
+The point behind this approach of testing is to drive out the code necessary to do the job, no more code, no less. The developer 
+should take a top down approach to solving the problem. There are many developers who instantly start working on the low level
+details of the code and then build up towards the code that may eventually interface with other groups.
+
+If the developer instead started from the top down, they could shape the interface sooner and have that drive how the rest of the
+low level details should be written.
