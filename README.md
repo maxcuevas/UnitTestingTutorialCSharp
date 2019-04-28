@@ -9,4 +9,6 @@ The following is the order that documents should be read in.
 3. [SimpleUnitTestInCSharpExplanation](./SimpleUnitTestInCSharpExplanation.md)
 4. [TestingAClassThatDependsOnAnotherClass](./TestingAClassThatDependsOnAnotherClass.md)
 5. [DifferentTypesOfTesting.md](./DifferentTypesOfTesting.md)
-6. [UsefulResources.md](./UsefulResources.md)
+6. [PreparingForMOQlibraryWithoutInternet](./PreparingForMOQlibraryWithoutInternet.md)
+7. [MOQExample](./MOQExample.md)
+8. [UsefulResources.md](./UsefulResources.md)
