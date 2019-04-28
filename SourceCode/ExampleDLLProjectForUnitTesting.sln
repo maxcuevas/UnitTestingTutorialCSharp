@@ -7,9 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDLLProjectForUnitTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{F74F6BA2-85F0-4F10-AFE3-07DB0367FBE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDLLProjectForUnitTestDependingOnAnotherClass", "ExampleDLLProjectForUnitTestDependingOnAnotherClass\ExampleDLLProjectForUnitTestDependingOnAnotherClass.csproj", "{E9586069-D5C3-41B6-B29D-991CC2846562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleDLLProjectForUnitTestDependingOnAnotherClass", "ExampleDLLProjectForUnitTestDependingOnAnotherClass\ExampleDLLProjectForUnitTestDependingOnAnotherClass.csproj", "{E9586069-D5C3-41B6-B29D-991CC2846562}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestClassesWithDependencies", "UnitTestClassesWithDependencies\UnitTestClassesWithDependencies.csproj", "{C7352086-425D-469A-8ED2-A6C38D7B7B1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDLLUsingMoqForMockingUnitTest", "ExampleDLLUsingMoqForMockingUnitTest\ExampleDLLUsingMoqForMockingUnitTest.csproj", "{DC97D042-43ED-408C-B4A5-B9CCA7512FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDLLUsingMoqForMocking", "ExampleDLLUsingMoqForMocking\ExampleDLLUsingMoqForMocking.csproj", "{5071C1FB-5D34-43F2-A661-6CD31692F5EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C7352086-425D-469A-8ED2-A6C38D7B7B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7352086-425D-469A-8ED2-A6C38D7B7B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7352086-425D-469A-8ED2-A6C38D7B7B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC97D042-43ED-408C-B4A5-B9CCA7512FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC97D042-43ED-408C-B4A5-B9CCA7512FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC97D042-43ED-408C-B4A5-B9CCA7512FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC97D042-43ED-408C-B4A5-B9CCA7512FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5071C1FB-5D34-43F2-A661-6CD31692F5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5071C1FB-5D34-43F2-A661-6CD31692F5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5071C1FB-5D34-43F2-A661-6CD31692F5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5071C1FB-5D34-43F2-A661-6CD31692F5EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
