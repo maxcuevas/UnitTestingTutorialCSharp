@@ -12,7 +12,7 @@ namespace UnitTestClassesWithDependencies
         [TestMethod]
         public void calculateYearlySalary_GivenSalaryOf100000_Return110000()
         {
-            subject = new AddBonusToSalaryUsingISalarayCalculator(new MySalaryCalculator());
+            subject = new AddBonusToSalaryUsingISalaryCalculator(new MySalaryCalculator());
 
             int expected = (int)110e3;
             int actual = subject.calculateYearlySalary();
