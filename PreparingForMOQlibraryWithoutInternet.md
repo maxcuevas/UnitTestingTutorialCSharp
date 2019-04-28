@@ -71,4 +71,39 @@ Finally you need to reference those DLLs in your project
 16. You should now see all four DLLs in the middle section of the **Reference Manager** window
 17. Each DLL should have a check mark to the left of the DLL's name
 
+MOQ will get angry if this line is not included in one of your classes:
+
+```
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
+```
+
+For example: 
+```using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Text;
+
+
+[assembly: InternalsVisibleTo("ExampleDLLUsingMoqForMockingUnitTest")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
+
+namespace ExampleDLLProjectForUnitTestDependingOnAnotherClass
+{
+    class AddBonusToSalaryUsingISalaryCalculator
+    {
+        ISalaryCalculator salaryCalculator;
+
+        public AddBonusToSalaryUsingISalaryCalculator(ISalaryCalculator salaryCalculator)
+        {
+            this.salaryCalculator = salaryCalculator;
+        }
+
+        public int calculateYearlySalary()
+        {
+            return (int)(salaryCalculator.calculateSalary() * 1.1);
+        }
+    }
+}
+```
+
 You are now set to use MOQ in your project
