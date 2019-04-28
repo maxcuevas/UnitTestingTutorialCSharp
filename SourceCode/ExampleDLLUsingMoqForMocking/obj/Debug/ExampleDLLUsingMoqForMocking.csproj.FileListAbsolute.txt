@@ -1,0 +1,6 @@
+C:\Workspace\UnitTestingTutorialCSharp\SourceCode\ExampleDLLUsingMoqForMocking\bin\Debug\ExampleDLLUsingMoqForMocking.dll
+C:\Workspace\UnitTestingTutorialCSharp\SourceCode\ExampleDLLUsingMoqForMocking\bin\Debug\ExampleDLLUsingMoqForMocking.pdb
+C:\Workspace\UnitTestingTutorialCSharp\SourceCode\ExampleDLLUsingMoqForMocking\obj\Debug\ExampleDLLUsingMoqForMocking.csprojAssemblyReference.cache
+C:\Workspace\UnitTestingTutorialCSharp\SourceCode\ExampleDLLUsingMoqForMocking\obj\Debug\ExampleDLLUsingMoqForMocking.csproj.CoreCompileInputs.cache
+C:\Workspace\UnitTestingTutorialCSharp\SourceCode\ExampleDLLUsingMoqForMocking\obj\Debug\ExampleDLLUsingMoqForMocking.dll
+C:\Workspace\UnitTestingTutorialCSharp\SourceCode\ExampleDLLUsingMoqForMocking\obj\Debug\ExampleDLLUsingMoqForMocking.pdb
